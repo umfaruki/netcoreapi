@@ -1,0 +1,14 @@
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\bin\Debug\netcoreapp2.2\CoreApi_Umer.deps.json
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\bin\Debug\netcoreapp2.2\CoreApi_Umer.runtimeconfig.json
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\bin\Debug\netcoreapp2.2\CoreApi_Umer.runtimeconfig.dev.json
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\bin\Debug\netcoreapp2.2\CoreApi_Umer.dll
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\bin\Debug\netcoreapp2.2\CoreApi_Umer.pdb
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.csproj.CoreCompileInputs.cache
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.RazorAssemblyInfo.cache
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.RazorAssemblyInfo.cs
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.AssemblyInfoInputs.cache
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.AssemblyInfo.cs
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.RazorTargetAssemblyInfo.cache
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.dll
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.pdb
+C:\Users\Umer\source\repos\netcoreapi\CoreApi_Umer\obj\Debug\netcoreapp2.2\CoreApi_Umer.csprojAssemblyReference.cache
