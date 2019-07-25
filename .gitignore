@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/CoreApi_Umer/v15/Server/sqlite3
+/CoreApi_Umer/Database/bookingDb.mdf
+/CoreApi_Umer/Database/bookingDb_log.ldf

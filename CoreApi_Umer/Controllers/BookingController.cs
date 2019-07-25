@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CoreApi_Umer.Models;
+using CoreApi_Umer.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,14 +17,15 @@ namespace CoreApi_Umer.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new BookingModel().DefaultBookings());
+            return Ok(BookingService.GetBookings());
+            // return Ok(new BookingModel().DefaultBookings());
         }
 
         // GET: api/Booking/5
         [HttpGet("{id}", Name = "Get")]
         public IActionResult Get(Guid id)
         {
-            return Ok(new ActionResult<BookingModel>(new BookingModel { BookingId = Guid.NewGuid(), BookDate = DateTime.Now, Description = "This is  test"}));
+            return Ok(new ActionResult<BookingModel>(new BookingModel { }));
         }
     
         // POST: api/Booking
@@ -50,11 +52,11 @@ namespace CoreApi_Umer.Controllers
         [ProducesResponseType(400)]       
         public IActionResult Post(BookingModel value)
         {
-            if (string.IsNullOrEmpty(value.Description))
+            if (string.IsNullOrEmpty(value.Name))
             {
                 return BadRequest("you must enter the description");
             }
-            return Ok(new ActionResult<BookingModel>(new BookingModel { BookingId = value.BookingId, BookDate = value.BookDate, Description = value.Description }));
+            return Ok(new ActionResult<BookingModel>(new BookingModel {}));
         }
 
         // PUT: api/Booking/5

@@ -10,7 +10,25 @@ namespace CoreApi_Umer.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        
+        /// <summary>
+        /// Get bookings.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Get /get
+        ///     {
+        ///        "id": 1,
+        ///        "name": "Item1",
+        ///        "isComplete": true
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="item"></param>
+        /// <returns>A newly created TodoItem</returns>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>        
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -24,8 +42,27 @@ namespace CoreApi_Umer.Controllers
             return "value";
         }
 
-        // POST api/values
+        /// <summary>
+        /// Post bookings.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Post /Post
+        ///     {
+        ///        "id": 1,
+        ///        "name": "Item1",
+        ///        "isComplete": true
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="item"></param>
+        /// <returns>A newly created BookingItem</returns>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>        
         [HttpPost]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
         public void Post([FromBody] string value)
         {
         }
