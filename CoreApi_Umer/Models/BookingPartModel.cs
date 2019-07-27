@@ -7,7 +7,7 @@ namespace CoreApi_Umer.Models
 {
     public class BookingPartModel
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime CreationTime { get; set; }

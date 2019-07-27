@@ -123,6 +123,45 @@ namespace CoreApi_Umer.Services
 
             //return new List<Booking>();
         }
+
+        public static List<BookingModel> SaveBooking(BookingModel bookingData = null)
+        {
+
+            var dbBooking = new Booking();
+
+            dbBooking.Id = bookingData.Id;
+            dbBooking.Name = bookingData.Name;
+            dbBooking.CreationDate = DateTime.Now;
+            dbBooking.UpdatedDate = DateTime.Now;
+            //dbBooking.BookingParts = new List<BookingPart>();
+
+            bookingData.BookingParts.ForEach(bpt =>
+            {
+                dbBooking.Add(new BookingPart
+                {
+                    Id = bpt.Id,
+                    CreationDate = DateTime.Now,
+                    CreationTime = DateTime.Now,
+                    Status = 2,
+                    Description = bpt.Description,
+                    Title = bpt.Title,
+                    UpdatedDate = DateTime.Now,
+                });
+            });
+
+            using (var session = SessionFactoryBuilder.OpenSession())
+            {
+                using (ITransaction transaction = session.BeginTransaction())
+                {
+                    session.Save(dbBooking);
+                    transaction.Commit();
+                }
+            }
+
+            return GetBookings();
+
+
+        }
     }
     
 }

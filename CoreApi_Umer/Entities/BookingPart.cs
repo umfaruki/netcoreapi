@@ -7,7 +7,7 @@ namespace CoreApi_Umer.Entities
 {
     public class BookingPart
     {
-        public virtual string Id { get; set; }
+        public virtual int Id { get; set; }
         public virtual string Title { get; set; }
 
         public virtual string Description { get; set; }

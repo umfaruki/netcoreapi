@@ -50,13 +50,13 @@ namespace CoreApi_Umer.Controllers
         [HttpPost]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]       
-        public IActionResult Post(BookingModel value)
+        public IActionResult Post(BookingModel bookingModel)
         {
-            if (string.IsNullOrEmpty(value.Name))
+            if (string.IsNullOrEmpty(bookingModel.Name))
             {
                 return BadRequest("you must enter the description");
             }
-            return Ok(new ActionResult<BookingModel>(new BookingModel {}));
+            return Ok(BookingService.SaveBooking(bookingModel));
         }
 
         // PUT: api/Booking/5

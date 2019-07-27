@@ -18,9 +18,10 @@ namespace CoreApi_Umer.Maps
 
             // One to May relation
             HasMany(x => x.BookingParts)
-                                   .AsSet()
-                                   .Inverse()
-                                   .Cascade.All();
+                                        .Inverse() // this is the way how to manage insertions
+                                        .Cascade.All().Table("BookingPart");
+        
+
         }
     }
 }

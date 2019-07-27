@@ -21,7 +21,8 @@ namespace CoreApi_Umer.Maps
             Map(x => x.CreationDate);
 
             //Use References to create relationship with Parent;
-            References(x => x.Booking).Column("BookingId").Cascade.All(); 
+            References(x => x.Booking).Column("BookingId").Cascade.All();
+           
         }
     }
 }
